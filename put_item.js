@@ -9,10 +9,11 @@ var ddb = new AWS.DynamoDB({apiVersion: '2012-08-10'});
 var params = {
   TableName: 'products',
   Item: {
-    'id': {S: '2'},
-    'PRODUCT_NAME' : {S: 'product 2'},
-    'PRODUCT_DESCRIPTION' : {S: 'product 2 description'},
-    'PRODUCT_PRICE': {N: '20'}
+    'id': {S: '1'},
+    'PRODUCT_NAME' : {S: 'product 1'},
+    'PRODUCT_DESCRIPTION' : {S: 'product 1 description'},
+    'PRODUCT_PRICE': {N: '10'},
+    'PRODUCT_IMAGES': {L: [{'S': 'https://e-commerce-images-bucket.s3.us-east-1.amazonaws.com/carlos1.jpg'}, {'S': 'https://e-commerce-images-bucket.s3.us-east-1.amazonaws.com/carlos2.jpg'}]}
   }
 };
 
