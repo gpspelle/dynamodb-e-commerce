@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@shelf/dynamodb-parallel-scan": "^2.2.3",
     "aws-sdk": "^2.1024.0"
   }
 }
